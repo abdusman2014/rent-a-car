@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .container {
+            margin: 10px;
+        }
+
+        .Suzuki {
+            background-color: white;
+            border: none;
+            /* border:2px solid black; */
+            width: 30%;
+            height: 30%
+        }
+
+        .Toyota {
+            background-color: white;
+            /* border:2px solid black; */
+            width: 30%;
+            height: 30%
+        }
+
+        .Suzuki:hover {
+            width: 40%;
+            transition: 1s
+        }
+
+        .Toyota:hover {
+            width: 40%;
+            transition: 1s
+        }
+
+        .SelectYourCompany {
+            text-align: center;
+            font-size: 20px;
+            background-color: black;
+            color: aliceblue;
+            padding: 10px
+        }
+
+        .gap {
+            border: 2px solid black
+        }
+
+        #SuzukiButtonClass {
+            display: none;
+            float: left;
+            margin: 10px 10px;
+            padding: 100px 30px;
+            background-color: white;
+            border: none;
+            /* display: inline-block; */
+        }
+
+        #ToyotaButtonClass {
+            display: none;
+            float: left;
+            margin: 10px 10px;
+            padding: 100px 30px;
+            background-color: white;
+            border: none;
+            /* display: inline-block; */
+        }
+
+        .Specification{
+            background-color: rgb(222, 255, 169);
+        }
+
+        .col-sm-6 img{
+            margin:30px 0px 
+        }
+
+        .card{
+            margin: 10px 10px
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hamari Car Rental Company ka naam</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Find out available car</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Apply Coupons</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <div class="SelectYourCompany">
+        Pick your Company
+    </div>
+    <div class="container">
+        <button id="SuzukiBtnId" type="button" class="btn  Suzuki" onclick=Show(id)><img src="Suzuki.png" alt=""
+                width="100%"></button>
+        <button id="ToyotaBtnId" type="button" class="btn  Toyota" onclick=Show(id)><img src="Toyota.png" alt=""
+                width="100%"></button>
+
+        <div class="lists">Here are some of the list of available cars</div>
+        <!-- <div class="AllSuzukiButtons">
+            <button id = "SuzukiButton1" class="SuzukiButtonClass" type="button" class="btn btn-outline-primary"><img src="img1.jpg" alt=""></button>
+            <button id = "SuzukiButton2" class="SuzukiButtonClass" type="button" class="btn btn-outline-primary"><img src="img1.jpg" alt=""></button>
+            <button id = "SuzukiButton3" class="SuzukiButtonClass" type="button" class="btn btn-outline-primary"><img src="img1.jpg" alt=""></button>
+            <button id = "SuzukiButton4" class="SuzukiButtonClass" type="button" class="btn btn-outline-primary"><img src="img1.jpg" alt=""></button>
+        </div> -->
+    </div>
+
+        <div id="SuzukiButtonClass">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body1">
+                            <h5 class="card-title">Mehran</h5>
+                            <div class="gap"></div>
+                            <img src="Mehran.png" alt="" width="93%" >
+                            <div class="gap"></div>
+                            <div class="Specification">
+                            <p class="card-text">
+                                Model: Mehran
+                            </p>
+
+                            <p class="card-text">
+                                Make Year: 2019
+                            </p>
+
+                            <p class="card-text">
+                                Color: Gray
+                            </p>
+                        </div>
+
+                            <a href="/BookingMenu.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body1">
+                            <h5 class="card-title">Mehran</h5>
+                            <div class="gap"></div>
+                            <img src="WhiteMehran.png" alt="" width="100%">
+                            <div class="gap"></div>
+                            <div class="Specification">
+                            <p class="card-text">
+                                Model: Mehran
+                            </p>
+
+                            <p class="card-text">
+                                Make Year: 2019
+                            </p>
+
+                            <p class="card-text">
+                                Color: Red
+                            </p>
+                        </div>
+
+                            <a href="/BookingMenu.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body1">
+                            <h5 class="card-title">Alto</h5>
+                            <div class="gap"></div>
+                            <img src="Alto.png" alt="" width="100%">
+                            <div class="gap"></div>
+                            <div class="Specification">
+                            <p class="card-text">
+                                Model: Alto
+                            </p>
+
+                            <p class="card-text">
+                                Make Year: 2021
+                            </p>
+
+                            <p class="card-text">
+                                Color: White
+                            </p>
+                        </div>
+
+                            <a href="/BookingMenu.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body1">
+                            <h5 class="card-title">WagonR</h5>
+                            <div class="gap"></div>
+                            <img src="wagonR.png" alt="" width="90%">
+                            <div class="gap"></div>
+                            <div class="Specification">
+                            <p class="card-text">
+                                -Model: WagonR
+                            </p>
+
+                            <p class="card-text">
+                                Make Year: 2019
+                            </p>
+
+                            <p class="card-text">
+                                Color: White
+                            </p>
+                        </div>
+
+                        <a href="/BookingMenu.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="ToyotaButtonClass">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body1">
+                        <h5 class="card-title">Mehran</h5>
+                        <div class="gap"></div>
+                        <img src="Mehran.png" alt="" width="93%" >
+                        <div class="gap"></div>
+                        <div class="Specification">
+                        <p class="card-text">
+                            Model: Mehran
+                        </p>
+
+                        <p class="card-text">
+                            Make Year: 2019
+                        </p>
+
+                        <p class="card-text">
+                            Color: Gray
+                        </p>
+                    </div>
+
+                        <a href="/BookingMenu.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body1">
+                        <h5 class="card-title">Mehran</h5>
+                        <div class="gap"></div>
+                        <img src="WhiteMehran.png" alt="" width="100%">
+                        <div class="gap"></div>
+                        <div class="Specification">
+                        <p class="card-text">
+                            Model: Mehran
+                        </p>
+
+                        <p class="card-text">
+                            Make Year: 2019
+                        </p>
+
+                        <p class="card-text">
+                            Color: Red
+                        </p>
+                    </div>
+
+                        <a href="/BookingMenu.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body1">
+                        <h5 class="card-title">Alto</h5>
+                        <div class="gap"></div>
+                        <img src="Alto.png" alt="" width="100%">
+                        <div class="gap"></div>
+                        <div class="Specification">
+                        <p class="card-text">
+                            Model: Alto
+                        </p>
+
+                        <p class="card-text">
+                            Make Year: 2021
+                        </p>
+
+                        <p class="card-text">
+                            Color: White
+                        </p>
+                    </div>
+
+                        <a href="/BookingMenu.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body1">
+                        <h5 class="card-title">WagonR</h5>
+                        <div class="gap"></div>
+                        <img src="wagonR.png" alt="" width="90%">
+                        <div class="gap"></div>
+                        <div class="Specification">
+                        <p class="card-text">
+                            -Model: WagonR
+                        </p>
+
+                        <p class="card-text">
+                            Make Year: 2019
+                        </p>
+
+                        <p class="card-text">
+                            Color: White
+                        </p>
+                    </div>
+
+                    <a href="/BookingMenu.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        function Show(MyID) {
+            console.log(MyID);
+            if (MyID == "SuzukiBtnId") {
+                document.getElementById("SuzukiButtonClass").style.display = "block";
+                document.getElementById("ToyotaButtonClass").style.display = "none";
+            }
+            if (MyID == "ToyotaBtnId") {
+                document.getElementById("SuzukiButtonClass").style.display = "none";
+                document.getElementById("ToyotaButtonClass").style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
